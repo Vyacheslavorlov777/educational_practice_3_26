@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>CRM: Реестр партнеров</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- MainWindow: главная форма со списком партнеров -->
+    <section id="mainWindow" class="window">
+      <div class="window__titlebar">
+        <span class="window__title-text">CRM: Реестр партнеров</span>
+      </div>
+      <div class="window__body">
+        <div class="toolbar">
+          <button id="btnAddPartner" class="btn btn--primary">Добавить партнера</button>
+        </div>
+        <ul id="partnerList" class="partner-list">
+          <li class="partner-list__item">ЗАО «Северный Альянс» — рейтинг 9</li>
+          <li class="partner-list__item">ООО «ТоргСервис» — рейтинг 7</li>
+          <li class="partner-list__item">ИП Захаров Д.С. «Кофе Плюс» — рейтинг 8</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PartnerEditWindow: форма добавления/редактирования партнера -->
+    <section id="editWindow" class="window window--hidden">
+      <div class="window__titlebar">
+        <span class="window__title-text">CRM: Карточка партнера [Редактирование]</span>
+      </div>
+      <div class="window__body">
+        <p class="placeholder-text">Здесь будет форма добавления/редактирования партнера (см. задание 2).</p>
+        <div class="toolbar">
+          <button id="btnBack" class="btn">Назад</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
